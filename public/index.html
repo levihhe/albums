@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albumok</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Albumok Nyilvántartása</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Új Album Hozzáadása</h2>
+      <form id="album-form">
+        <input type="text" id="artist" placeholder="Előadó neve" required />
+        <input type="text" id="title" placeholder="Album címe" required />
+        <input type="text" id="genre" placeholder="Műfaj" required />
+        <input type="number" id="year" placeholder="Megjelenés éve" required />
+        <button type="submit">Hozzáadás</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Album Lista</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Előadó</th>
+            <th>Album</th>
+            <th>Műfaj</th>
+            <th>Év</th>
+            <th>Műveletek</th>
+          </tr>
+        </thead>
+        <tbody id="album-list">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
